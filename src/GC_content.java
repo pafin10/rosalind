@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class GC_content {
     static String[] DNAstring = new String[30];
     static double k;
 

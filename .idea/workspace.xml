@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0945dce-60bc-461d-adb1-525798760a8b" name="Changes" comment="first try at GC - content. I managed to get the max ratio, but could not figure out how to match it with the right ID. Problem was I ignored the ID at first and only later noticed I had to return both, GC ratio and ID.">
+    <list default="true" id="a0945dce-60bc-461d-adb1-525798760a8b" name="Changes" comment="Made it!">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EnumeratingGeneOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HammingDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GC_content.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +39,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -46,7 +57,9 @@
       <option name="presentableId" value="Default" />
       <updated>1678468681671</updated>
       <workItem from="1678468683061" duration="14306000" />
-      <workItem from="1678519505365" duration="5675000" />
+      <workItem from="1678519505365" duration="5822000" />
+      <workItem from="1678563726506" duration="156000" />
+      <workItem from="1678989298361" duration="8974000" />
     </task>
     <task id="LOCAL-00001" summary="first try at GC - content. I managed to get the max ratio, but could not figure out how to match it with the right ID. Problem was I ignored the ID at first and only later noticed I had to return both, GC ratio and ID.">
       <created>1678489424510</created>
@@ -55,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678489424510</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Made it!">
+      <created>1678525601270</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678525601270</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,6 +83,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first try at GC - content. I managed to get the max ratio, but could not figure out how to match it with the right ID. Problem was I ignored the ID at first and only later noticed I had to return both, GC ratio and ID." />
-    <option name="LAST_COMMIT_MESSAGE" value="first try at GC - content. I managed to get the max ratio, but could not figure out how to match it with the right ID. Problem was I ignored the ID at first and only later noticed I had to return both, GC ratio and ID." />
+    <MESSAGE value="Made it!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made it!" />
   </component>
 </project>
