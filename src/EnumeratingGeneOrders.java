@@ -44,10 +44,10 @@ public class EnumeratingGeneOrders {
     return list;}
 
     public static void main(String[] args) {
-        System.out.println(permutationCount(4));
-        List<Integer> nums = new ArrayList<>(generateList(4));
+        List<Integer> nums = new ArrayList<>(generateList(5));
         List<List<Integer>> permutations = generatePermutations(nums);
         System.out.println(permutations);
+        System.out.println(permutations.size());
 
     }
 }
