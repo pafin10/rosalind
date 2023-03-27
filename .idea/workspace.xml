@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0945dce-60bc-461d-adb1-525798760a8b" name="Changes" comment="permutations are confusing - go through the recursive generatePermutationsHelper again!">
-      <change afterPath="$PROJECT_DIR$/src/Mendels_First_Law.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Translating_RNA_into_protein.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/txt_files/codon_table.txt" afterDir="false" />
+    <list default="true" id="a0945dce-60bc-461d-adb1-525798760a8b" name="Changes" comment="RNA to protein done (and some probability stuff)">
+      <change afterPath="$PROJECT_DIR$/src/Finding_a_motiv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnumeratingGeneOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnumeratingGeneOrders.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +70,8 @@
       <workItem from="1679262090327" duration="26000" />
       <workItem from="1679262958914" duration="37000" />
       <workItem from="1679749237172" duration="7263000" />
-      <workItem from="1679849254262" duration="9467000" />
+      <workItem from="1679849254262" duration="9914000" />
+      <workItem from="1679946330226" duration="2424000" />
     </task>
     <task id="LOCAL-00001" summary="first try at GC - content. I managed to get the max ratio, but could not figure out how to match it with the right ID. Problem was I ignored the ID at first and only later noticed I had to return both, GC ratio and ID.">
       <created>1678489424510</created>
@@ -96,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679003195936</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="RNA to protein done (and some probability stuff)">
+      <created>1679866047105</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679866047105</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +111,7 @@
     <MESSAGE value="first try at GC - content. I managed to get the max ratio, but could not figure out how to match it with the right ID. Problem was I ignored the ID at first and only later noticed I had to return both, GC ratio and ID." />
     <MESSAGE value="Made it!" />
     <MESSAGE value="permutations are confusing - go through the recursive generatePermutationsHelper again!" />
-    <option name="LAST_COMMIT_MESSAGE" value="permutations are confusing - go through the recursive generatePermutationsHelper again!" />
+    <MESSAGE value="RNA to protein done (and some probability stuff)" />
+    <option name="LAST_COMMIT_MESSAGE" value="RNA to protein done (and some probability stuff)" />
   </component>
 </project>
