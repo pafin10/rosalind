@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0945dce-60bc-461d-adb1-525798760a8b" name="Changes" comment="RNA to protein done (and some probability stuff)">
-      <change afterPath="$PROJECT_DIR$/src/Finding_a_motiv.java" afterDir="false" />
+    <list default="true" id="a0945dce-60bc-461d-adb1-525798760a8b" name="Changes" comment="find substring locations (rather easy)">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Consensus_and_profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/txt_files/consensus_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/txt_files/rosalind_cons.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +74,9 @@
       <workItem from="1679262958914" duration="37000" />
       <workItem from="1679749237172" duration="7263000" />
       <workItem from="1679849254262" duration="9914000" />
-      <workItem from="1679946330226" duration="2424000" />
+      <workItem from="1679946330226" duration="2552000" />
+      <workItem from="1680093648256" duration="11965000" />
+      <workItem from="1680117991113" duration="6749000" />
     </task>
     <task id="LOCAL-00001" summary="first try at GC - content. I managed to get the max ratio, but could not figure out how to match it with the right ID. Problem was I ignored the ID at first and only later noticed I had to return both, GC ratio and ID.">
       <created>1678489424510</created>
@@ -101,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679866047105</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="find substring locations (rather easy)">
+      <created>1679948995161</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679948995161</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +124,7 @@
     <MESSAGE value="Made it!" />
     <MESSAGE value="permutations are confusing - go through the recursive generatePermutationsHelper again!" />
     <MESSAGE value="RNA to protein done (and some probability stuff)" />
-    <option name="LAST_COMMIT_MESSAGE" value="RNA to protein done (and some probability stuff)" />
+    <MESSAGE value="find substring locations (rather easy)" />
+    <option name="LAST_COMMIT_MESSAGE" value="find substring locations (rather easy)" />
   </component>
 </project>
