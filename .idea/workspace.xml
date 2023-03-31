@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0945dce-60bc-461d-adb1-525798760a8b" name="Changes" comment="find substring locations (rather easy)">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Consensus_and_profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/txt_files/consensus_test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/txt_files/rosalind_cons.txt" afterDir="false" />
+    <list default="true" id="a0945dce-60bc-461d-adb1-525798760a8b" name="Changes" comment="consensus and profile, challenging">
+      <change afterPath="$PROJECT_DIR$/src/Mortal_fibonacci_rabbits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +73,9 @@
       <workItem from="1679849254262" duration="9914000" />
       <workItem from="1679946330226" duration="2552000" />
       <workItem from="1680093648256" duration="11965000" />
-      <workItem from="1680117991113" duration="6749000" />
+      <workItem from="1680117991113" duration="7091000" />
+      <workItem from="1680204069127" duration="10395000" />
+      <workItem from="1680254404418" duration="12054000" />
     </task>
     <task id="LOCAL-00001" summary="first try at GC - content. I managed to get the max ratio, but could not figure out how to match it with the right ID. Problem was I ignored the ID at first and only later noticed I had to return both, GC ratio and ID.">
       <created>1678489424510</created>
@@ -113,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679948995161</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="consensus and profile, challenging">
+      <created>1680162860739</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680162860739</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +131,18 @@
     <MESSAGE value="permutations are confusing - go through the recursive generatePermutationsHelper again!" />
     <MESSAGE value="RNA to protein done (and some probability stuff)" />
     <MESSAGE value="find substring locations (rather easy)" />
-    <option name="LAST_COMMIT_MESSAGE" value="find substring locations (rather easy)" />
+    <MESSAGE value="consensus and profile, challenging" />
+    <option name="LAST_COMMIT_MESSAGE" value="consensus and profile, challenging" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Mortal_fibonacci_rabbits.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
