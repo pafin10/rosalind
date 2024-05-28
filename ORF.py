@@ -1,26 +1,4 @@
-s = ""
-# TODO: I THINK 3 DIFFERENT SHIFTS MUST BE CONSIDERED SEPARATELY !
-with open('ORF.txt', 'r') as f:
-    f.readline()
-    for line in f:
-        s += line.strip()
-
-
-def construct_rf(s):
-    orfs, rf, i = [], "", 0
-    while i < len(s) - 3:
-        if codon_table[s[i:i + 3]] != 'M' and not rf:
-            i += 1
-        if codon_table[s[i:i + 3]] == '*':
-            if rf:
-                orfs.append(rf)
-                rf = ""
-        elif codon_table[s[i:i + 3]] == 'M' or rf:
-            rf += codon_table[s[i:i + 3]]
-            i += 3
-    return orfs
-
-
+from collections import defaultdict
 codon_table = {
     'UUU': 'F', 'UUC': 'F', 'UUA': 'L', 'UUG': 'L',  # Phenylalanine (F) and Leucine (L)
     'UCU': 'S', 'UCC': 'S', 'UCA': 'S', 'UCG': 'S',  # Serine (S)
@@ -39,14 +17,42 @@ codon_table = {
     'GAU': 'D', 'GAC': 'D', 'GAA': 'E', 'GAG': 'E',  # Aspartic Acid (D) and Glutamic Acid (E)
     'GGU': 'G', 'GGC': 'G', 'GGA': 'G', 'GGG': 'G'  # Glycine (G)
 }
+def construct_rf(s):
+    orfs, rf, orf_cnts, pos = [], "", defaultdict(bool), []
+    for j in range(3):
+        rf = ""
+        i = j
+        while i < len(s) - j - 4:
+            if codon_table[s[i:i + 3]] != 'M' and not rf:
+                i += 3
+            if codon_table[s[i:i + 3]] == '*':
+                if rf:
+                    if not orf_cnts[rf]:
+                        orfs.append(rf)
+                    orf_cnts[rf] = True
+                    rf = ""
+            elif codon_table[s[i:i + 3]] == 'M' or rf:
+                if codon_table[s[i:i + 3]] == 'M':
+                    pos.append(i)
+                rf += codon_table[s[i:i + 3]]
+                i += 3
+    return orfs, pos
+
+
+
 if __name__ == '__main__':
+    s = ""
+    with open('ORF.txt', 'r') as f:
+        f.readline()
+        for line in f:
+            s += line.strip()
     s = s.replace('T', 'U')
-    orfs = construct_rf(s)
+    orfs, pos = construct_rf(s)
     repl = {'A': 'U', 'G': 'C', 'C': 'G', 'U': 'A'}
     rev_s = s[::-1]
 
     reversed_replaced_s = ''.join(repl.get(c) for c in rev_s)
-    rev_orfs = construct_rf(reversed_replaced_s)
+    rev_orfs, _ = construct_rf(reversed_replaced_s)
     orfs = orfs + rev_orfs
 
     for orf in orfs:
@@ -56,6 +62,6 @@ if __name__ == '__main__':
                 if not first:
                     orfs.append(orf[i:])
                 first = False
-    for o in orfs:
+    for o in set(orfs):
         if o:
             print(o)
