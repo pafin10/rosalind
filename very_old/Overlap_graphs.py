@@ -51,7 +51,7 @@ def compare_sequences(idss, sequencess):
 
 
 if __name__ == '__main__':
-    ids, sequences = read_fasta('/Users/mad_hatter/PycharmProjects/rosalind/src/txt_files/rosalind_grph.txt')
+    ids, sequences = read_fasta('very_old/txt_files/rosalind_grph.txt')
 
     adjacency_list = compare_sequences(ids, sequences)
 

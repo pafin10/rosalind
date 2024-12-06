@@ -41,5 +41,5 @@ def find_longest_substring(sequences):
 
 
 if __name__ == '__main__':
-    file = read_fasta("/Users/mad_hatter/PycharmProjects/rosalind/src/txt_files/rosalind_lcsm.txt")
+    file = read_fasta("very_old/txt_files/rosalind_lcsm.txt")
     print(find_longest_substring(file))
